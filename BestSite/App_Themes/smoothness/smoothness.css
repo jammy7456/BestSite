@@ -1,0 +1,33 @@
+﻿@import "jquery.ui.css";
+@import "../ui.jqgrid.css";
+@import "../Site.css";
+
+.jqg-toolbar .lbl-display
+{
+}
+
+.ui-jqgrid-htable th div .desc
+{
+    border-color: #CCC;
+}
+
+.lbl-display
+{
+    color: #666666;
+}
+
+td.readonly
+{
+    background: #F0F0F0 !important;
+    color: #336699 !important;
+}
+
+tr.level0
+{
+    background: #D5D5D5 !important;
+}
+
+tr.level1
+{
+    background: #F3F3F3 !important;
+}

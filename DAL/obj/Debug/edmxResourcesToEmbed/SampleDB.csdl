@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SampleDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="SampleDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="plus_file" EntityType="SampleDBModel.plus_file" />
+    <EntitySet Name="t_department" EntityType="SampleDBModel.t_department" />
+    <EntitySet Name="t_educational" EntityType="SampleDBModel.t_educational" />
+    <EntitySet Name="t_employee" EntityType="SampleDBModel.t_employee" />
+    <EntitySet Name="t_position" EntityType="SampleDBModel.t_position" />
+  </EntityContainer>
+  <EntityType Name="plus_file">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="type" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="size" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="url" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="pid" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="createdate" Type="DateTime" />
+    <Property Name="updatedate" Type="DateTime" />
+    <Property Name="folder" Type="Int32" />
+    <Property Name="num" Type="Int32" />
+  </EntityType>
+  <EntityType Name="t_department">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="manager" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="manager_name" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="t_educational">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="t_employee">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="loginname" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="age" Type="Int32" />
+    <Property Name="birthday" Type="DateTime" />
+    <Property Name="dept_id" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="position" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="gender" Type="Int32" />
+    <Property Name="married" Type="Int32" />
+    <Property Name="salary" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="educational" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="country" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="city" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="remarks" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="school" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="createtime" Type="DateTime" />
+    <Property Name="email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="t_position">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="dept_id" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+</Schema>

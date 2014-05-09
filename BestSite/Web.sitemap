@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" enableLocalization="true" >
+  <siteMapNode url="~" title="Home"  description="" roles="*" >
+    <siteMapNode url="~/Default.aspx" title="Home" description="" />
+
+    <siteMapNode url="~/Pages/Maintenance" title="Maintenance" description="" selectable="false" >
+
+      <siteMapNode url="~/Pages/WebForm1.aspx" title="Jqgrid" description="" />
+      <siteMapNode url="~/Pages/WebForm2.aspx" title="ZMJUI" description="" />
+      <siteMapNode url="~/Pages/WebForm3.aspx" title="EasyUI" description=""/>
+
+      <siteMapNode url="~/Pages/Maintenance/UserInfoPages/Index.aspx" title="User Information" description="" />
+
+      <siteMapNode url="~/Pages/Maintenance/AuthorityPages" title="Authority" description="" selectable="false">
+        <siteMapNode url="~/Pages/Maintenance/AuthorityPages/AuthorityGroupPages/Index.aspx" title="Authority Group" description=""/>
+        <siteMapNode url="~/Pages/Maintenance/AuthorityPages/UserAuthorityPages/Index.aspx" title="User Authority" description=""/>
+      </siteMapNode>
+
+      <siteMapNode url="~/Pages/Maintenance/Ordering" title="Ordering" description="" selectable="false">
+        <siteMapNode url="~/Pages/Maintenance/CostCenterCategoryPages/Ordering.aspx" title="Cost Center Category"  description="" />
+        <siteMapNode url="~/Pages/Maintenance/CostCenterPages/Ordering.aspx" title="Cost Center"  description="" />
+        <siteMapNode url="~/Pages/Maintenance/AllocationFactorPages/Ordering.aspx" title="Allocation Factor" description="" />
+        <siteMapNode url="~/Pages/Maintenance/ProcessPages/Ordering.aspx" title="Process" description="" />
+        <siteMapNode url="~/Pages/Maintenance/MachineGroupPages/Ordering.aspx" title="Machine Group" description="" />
+        <siteMapNode url="~/Pages/Maintenance/ExpenseCategoryTypePages/Ordering.aspx" title="Expense Category Type" description="" />
+        <siteMapNode url="~/Pages/Maintenance/ExpenseCategoryPages/Ordering.aspx" title="Expense Category" description="" />
+        <siteMapNode url="~/Pages/Maintenance/ExpenseCodePages/Ordering.aspx" title="Expense Code" description="" />
+      </siteMapNode>
+
+      <siteMapNode url="~/Pages/Maintenance/SAPDataTransferPages/View.aspx" title="SAP Data Transfer" description=""/>
+
+      <siteMapNode url="~/Pages/Maintenance/ControlAreaPages/Index.aspx" title="Control Area" description="" />
+
+      <siteMapNode url="~/Pages/Maintenance/CurrencyPages/Index.aspx" title="Currency" description="" />
+
+      <siteMapNode url="~/Pages/Maintenance/CompanyPages/Index.aspx" title="Company" description="" >
+        <siteMapNode url="~/Pages/Maintenance/CompanyPairPages/Index.aspx" title="Company Pair" description="" />
+      </siteMapNode>
+
+      <siteMapNode url="~/Pages/Maintenance/ExpenseGroupPages/Index.aspx" title="Expense Group" description="">
+        <siteMapNode url="~/Pages/Maintenance/ExpenseGroupCategoryPages/Index.aspx" title="Group Category" description="" />
+      </siteMapNode>
+
+      <siteMapNode url="~/Pages/Maintenance/ExpenseCategoryPages/Index.aspx" title="Expense Category" description="">
+        <siteMapNode url="~/Pages/Maintenance/ExpenseCategoryTypePages/Index.aspx" title="Category Type" description="" />
+      </siteMapNode>
+
+      <siteMapNode url="~/Pages/Maintenance/ExpenseCodePages/Index.aspx" title="Expense Code" description="" />
+
+      <siteMapNode url="~/Pages/Maintenance/GLCodePages/Index.aspx" title="GL Code" description="" />
+
+      <siteMapNode url="~/Pages/Maintenance/CostCenterInCompanyPages/Index.aspx" title="Cost Center In Company" description="" >
+        <siteMapNode url="~/Pages/Maintenance/CostCenterCategoryPages/Index.aspx" title="Center Category" description="" />
+        <siteMapNode url="~/Pages/Maintenance/CostCenterPages/Index.aspx" title="Cost Center" description="" />
+        <siteMapNode url="~/Pages/Maintenance/SAPCostCenterPages/Index.aspx" title="SAP Cost Center" description="" />
+      </siteMapNode>
+
+      <siteMapNode url="~/Pages/Maintenance/ProcessInCompanyPages/Index.aspx" title="Process In Company" description="" >
+        <siteMapNode url="~/Pages/Maintenance/ProcessPages/Index.aspx" title="Process" description="" />
+      </siteMapNode>
+
+      <siteMapNode url="~/Pages/Maintenance/MachineGroupInCompanyPages/Index.aspx" title="Machine Group In Company" description="" >
+        <siteMapNode url="~/Pages/Maintenance/MachineTeamPages/Index.aspx" title="Machine Team" description="" />
+        <siteMapNode url="~/Pages/Maintenance/MachineGroupPages/Index.aspx" title="Machine Group" description="" />
+      </siteMapNode>
+
+      <siteMapNode url="~/Pages/Maintenance/AllocationFactorPages/Index.aspx" title="Allocation Factor" description="" />
+
+      <siteMapNode url="~/Pages/Maintenance/ExpenseCategoryAllocationPages/Index.aspx" title="Expense Category Allocation" description="" />
+
+      <siteMapNode url="~/Pages/Maintenance/CostCenterGroupPages/Index.aspx" title="Cost Center Group"  description="" />
+
+    </siteMapNode>
+
+    <siteMapNode url="~/Pages/PlanningCost"  title="Planning Cost"  description="" selectable="false"  >
+      <siteMapNode url="~/Pages/PlanningCost/Admin" title="Administration"  description="" selectable="false" >
+        <siteMapNode url="~/Pages/PlanningCost/CostVersionPages/Index.aspx" title="Cost Version"  description="" />
+        <siteMapNode url="~/Pages/PlanningCost/CostMergePages/Index.aspx" title="Cost Merge"  description="" />
+      </siteMapNode>
+      <siteMapNode url="~/Pages/PlanningCost/CostVersionInCompanyPages/Index.aspx" title="Version In Company"  description="" />
+      <siteMapNode url="~/Pages/PlanningCost/ProcessAllocationPages/Index.aspx" title="Allocation Factor (By Process)"  description=""  />
+      <siteMapNode url="~/Pages/PlanningCost/MachineGroupAllocationPages/Index.aspx" title="Allocation Factor (By Machine)"  description=""  />
+      <siteMapNode url="~/Pages/PlanningCost/ExpenseAdjustmentPages/Index.aspx" title="Display Expense (By Process)"  description=""  />
+      <siteMapNode url="~/Pages/PlanningCost/CategoryExpensePages/Index.aspx" title="Display Expense (By Category)"  description=""  />
+      <siteMapNode url="~/Pages/PlanningCost/SimulatedHourlyRatePages/Index.aspx" title="Simulated Hourly Rate"  description=""  />
+      <siteMapNode url="~/Pages/PlanningCost/ActualHourlyRatePages/Index.aspx" title="Actual Hourly Rate (By Weightage)"  description=""  />
+    </siteMapNode>
+
+    <siteMapNode url="~/Pages/ActualCost" title="Actual Cost"  description="" selectable="false" >
+      <siteMapNode url="~/Pages/ActualCost/Admin" title="Administration"  description="" selectable="false">
+        <siteMapNode url="~/Pages/ActualCost/CostVersionPages/Index.aspx" title="Cost Version"  description="" />
+      </siteMapNode>
+      <siteMapNode url="~/Pages/ActualCost/CostVersionInCompanyPages/Index.aspx" title="Version In Company"  description=""  />
+      <siteMapNode url="~/Pages/ActualCost/ProcessAllocationPages/Index.aspx" title="Allocation Factor (By Process)"  description="" />
+      <siteMapNode url="~/Pages/ActualCost/MachineGroupAllocationPages/Index.aspx" title="Allocation Factor (By Machine)"  description=""  />
+      <siteMapNode url="~/Pages/ActualCost/ExpenseAdjustmentPages/Index.aspx" title="Display Expense (By Process)"  description="" />
+      <siteMapNode url="~/Pages/ActualCost/CategoryExpensePages/Index.aspx" title="Display Expense (By Category)"  description="" />
+      <siteMapNode url="~/Pages/ActualCost/SimulatedHourlyRatePages/Index.aspx" title="Simulated Hourly Rate"  description="" />
+      <siteMapNode url="~/Pages/ActualCost/ActualHourlyRatePages/Index.aspx" title="Actual Hourly Rate (By Weightage)"  description="" />
+    </siteMapNode>
+
+    <siteMapNode url="~/Pages/Reporting" title="Reporting"  description="" selectable="false" >
+      <siteMapNode url="~/Pages/Reporting/Planning" title="Planning Report"  description="" selectable="false" >
+        <siteMapNode url="~/Pages/Reporting/Planning/Expense" title="Expense"  description="" selectable="false" >
+          <siteMapNode url="~/Pages/Reporting/PlanningCostCenterExpense.aspx" title="Cost Center Expense"  description="" />
+          <siteMapNode url="~/Pages/Reporting/PlanningMonthlyExpense.aspx" title="Monthly Expense"  description="" />
+          <siteMapNode url="~/Pages/Reporting/PlanningCostCenterGroupExpense.aspx" title="Cost Center Group Expense"  description="" />
+        </siteMapNode>
+        <siteMapNode url="~/Pages/Reporting/Planning/HourlyRate" title="Hourly Rate"  description="" selectable="false" >
+          <siteMapNode url="~/Pages/Reporting/PlanningMonthlyHr.aspx" title="Machine Monthly Hourly Rate" description="" />
+          <siteMapNode url="~/Pages/Reporting/PlanningLaborMonthlyHr.aspx" title="Labor Monthly Hourly Rate" description="" />
+          <siteMapNode url="~/Pages/Reporting/PlanningTotalExpHr.aspx" title="Hourly Rate For Period" description="" />
+          <siteMapNode url="~/Pages/Reporting/PlanningCostCenterHr.aspx" title="Cost Center Hourly Rate" description="" />
+          <siteMapNode url="~/Pages/Reporting/PlanningSingleNonAdjHr.aspx" title="Single Non Adj Hourly Rate" description="" />
+        </siteMapNode>
+      </siteMapNode>
+
+      <siteMapNode url="~/Pages/Reporting/Actual" title="Actual Report"  description="" selectable="false" >
+        <siteMapNode url="~/Pages/Reporting/Actual/Expense" title="Expense"  description="" selectable="false" >
+          <siteMapNode url="~/Pages/Reporting/ActualCostCenterExpense.aspx" title="Cost Center Expense"  description="" />
+          <siteMapNode url="~/Pages/Reporting/ActualMonthlyExpense.aspx" title="Monthly Expense"  description="" />
+          <siteMapNode url="~/Pages/Reporting/ActualCostCenterGroupExpense.aspx" title="Cost Center Group Expense"  description="" />
+        </siteMapNode>
+        <siteMapNode url="~/Pages/Reporting/Actual/HourlyRate" title="Hourly Rate"  description="" selectable="false" >
+          <siteMapNode url="~/Pages/Reporting/ActualMonthlyHr.aspx" title="Machine Monthly Hourly Rate" description="" />
+          <siteMapNode url="~/Pages/Reporting/ActualLaborMonthlyHr.aspx" title="Labor Monthly Hourly Rate" description="" />
+          <siteMapNode url="~/Pages/Reporting/ActualTotalExpHr.aspx" title="Hourly Rate For Period" description="" />
+          <siteMapNode url="~/Pages/Reporting/ActualCostCenterHr.aspx" title="Cost Center Hourly Rate" description="" />
+          <siteMapNode url="~/Pages/Reporting/ActualSingleNonAdjHr.aspx" title="Single Non Adj Hourly Rate" description="" />
+          <!--<siteMapNode url="~/Pages/Reporting/ActualDynamicHourlyRate.aspx" title="Actual Dynamic Hourly Rate" description="" />-->
+        </siteMapNode>
+      </siteMapNode>
+
+      <siteMapNode url="~/Pages/Reporting/Comparision" title="Comparision Report"  description="" selectable="false" >
+        <siteMapNode url="~/Pages/Reporting/CostCenterExpenseComparison.aspx" title="Cost Center Expense Comparison"  description="" />
+        <siteMapNode url="~/Pages/Reporting/MonthlyExpenseComparison.aspx" title="Monthly Expense Comparison"  description="" />
+      </siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode url="~/Pages/Shared/CurrencyExchangePages" title="Others"  description="" selectable="false"  >
+      <siteMapNode url="~/Pages/Shared/CurrencyExchangePages/Index.aspx" title="Currency Exchange Rate"  description="" />
+      <siteMapNode url="~/Pages/OMIS/Index.aspx" title="OMIS Hourly Rate"  description="" />
+    </siteMapNode>
+
+    <siteMapNode url="~/About.aspx" title="About"  description="" />
+
+  </siteMapNode>
+</siteMap>

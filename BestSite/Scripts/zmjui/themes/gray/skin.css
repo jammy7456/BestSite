@@ -1,0 +1,441 @@
+﻿
+.zmj-mask-msg{	
+	border:2px solid #888;
+}
+/*----------------------------------- tools ----------------------------------*/
+
+.zmj-tools-close
+{
+    background:url(images/tools/close.gif) no-repeat 50% 0px;
+}
+
+/*----------------------------------- toolbar ----------------------------------*/
+
+.zmj-toolbar
+{
+    border:solid 1px #8C8C8C;
+    padding:5px;
+    background:#F3F3F3;
+}
+.separator
+{
+    border-left:solid 1px #A8A8A8;    
+}
+
+/*----------------------------------- button ----------------------------------*/
+
+.zmj-button
+{
+    border:1px solid #aaa;
+    background:#E0DFDF url(images/button/button.gif) repeat-x 0 0;
+    color:#000000;
+}
+body a:hover.zmj-button
+{
+    border: 1px solid #999;
+    background:#f2f2f2 url(images/button/hover.gif) repeat-x 0 0;              
+}
+body .zmj-button-pressed, body a:hover.zmj-button-pressed,
+body .zmj-button-checked, body a:hover.zmj-button-checked,
+body a.zmj-button-popup, body a:hover.zmj-button-popup
+{
+    background:#d5d5d5;     
+}
+body .zmj-button-disabled, body a:hover.zmj-button-disabled
+{
+    border: 1px solid #cecec3;
+    color:#808080;
+    background:#E0DFDF url(images/button/disabled.gif) repeat-x 0 0px;        
+}
+
+
+/*----------------------------------- textbox ----------------------------------*/
+.zmj-textbox-input
+{
+    background:white;
+	border-color:#a5acb5;        
+}
+body .zmj-textbox-focus .zmj-textbox-input
+{
+    border-color: #7F7F7F;
+}
+
+
+/*----------------------------------- buttonedit ----------------------------------*/
+
+.zmj-buttonedit-border
+{
+    background:white;
+	border-color:#a5acb5;      
+}
+body .zmj-buttonedit-focus .zmj-buttonedit-border
+{
+    border-color: #7F7F7F;
+}
+.zmj-buttonedit-button
+{
+	background:#E6E6E6 url(images/buttonedit/button.gif) repeat-x 50% 50%;		
+	border:#a5acb5 1px solid;   
+	padding:0;
+}
+.zmj-buttonedit-button-hover,
+.zmj-buttonedit-hover .zmj-buttonedit-button
+{
+    background:#f2f2f2 url(images/buttonedit/hover.gif) repeat-x 0 0; 
+	border-color:#7F7F7F;
+}
+.zmj-buttonedit-button-pressed,
+.zmj-buttonedit-popup .zmj-buttonedit-button
+{
+	border-color:#7F7F7F;
+    background:#d5d5d5;	
+}
+.zmj-popupedit .zmj-buttonedit-icon
+{
+    background:url(images/buttonedit/icon2.gif) no-repeat 60% 30%;
+}
+.zmj-datepicker .zmj-buttonedit-icon
+{
+    background:url(images/buttonedit/icon2.gif) no-repeat 60% 30%;
+}
+
+
+
+/*------------------------- panel -----------------------*/
+
+.zmj-panel-border
+{
+    border:1px solid #8B8B8B;  
+}
+.zmj-panel-header
+{
+    height:21px;
+    background:#DCDCDC;
+}
+.zmj-panel-header-inner
+{
+   padding-top:3px;
+}
+.zmj-panel-toolbar
+{
+    border-bottom:solid 1px #C9C9C9;
+    background:#F3F3F3;
+}
+
+.zmj-panel-footer
+{
+    border-top:solid 1px #C9C9C9;
+    background:#F3F3F3;
+}
+
+/*----------------------------- window -------------------------*/
+.zmj-window .zmj-panel-header
+{
+    background:#DCDCDC;
+}
+.zmj-window .zmj-panel-footer
+{
+    background:#F3F3F3;
+}
+
+/*------------------- navbar ------------------*/
+.zmj-outlookbar-border
+{
+    border:1px solid #A8A8A8;         
+}
+.zmj-outlookbar-groupHeader
+{
+    background:#E0E0E0;    
+}
+/* view2 */
+.zmj-outlookbar-view2 .zmj-outlookbar-groupHeader
+{
+    border:solid 1px #A8A8A8; 
+}
+.zmj-outlookbar-view2 .zmj-outlookbar-groupBody
+{    
+    background:#efefef;
+}
+/* view3 */
+.zmj-outlookbar-view3 .zmj-outlookbar-group
+{
+    border:solid 1px #A8A8A8; 
+}
+
+
+/*----------------------- layout -----------------------*/
+
+.zmj-layout-region
+{
+    border:1px solid #8B8B8B;
+}
+.zmj-layout-region-header
+{
+    background:#E0E0E0;
+    border-bottom:solid 1px #A8A8A8;
+}
+.zmj-layout-proxy
+{
+    background:#E0E0E0;
+}
+.zmj-layout-proxy-hover
+{
+    background:#F2F2F2;    
+}
+
+/*------------------------- menu --------------------------------*/
+
+.zmj-menu
+{
+    border-color:#8B8B8B;
+    background:white url(images/menu/menubg.gif) repeat-y;   
+    color:Black;
+}
+.zmj-menuitem
+{
+    line-height:20px;
+}
+.zmj-menuitem-hover
+{
+    border-color:#888888;
+    background:#f2f2f2;
+}
+.zmj-menu-popup
+{
+    border-color:#888888; 
+    background:#f2f2f2;    
+}
+.zmj-menuitem-selected
+{    
+    border-color:#888888; 
+    background:#cbcbcb;    
+}
+.zmj-menuitem-text, .zmj-menuitem-text a
+{
+    color:Black;
+}
+/* menu horizontal */
+.zmj-menu-horizontal .zmj-menu-inner
+{
+    background:#f0f0f0;
+}
+.zmj-menu-horizontal .zmj-menuitem-hover
+{
+    border:solid 1px #888888;
+    background:#cbcbcb;
+}
+.zmj-menu-horizontal  .zmj-menu-popup
+{
+    border:solid 1px #888888;
+    border-bottom:0px;
+    background:#cbcbcb;
+}
+
+/*---------------------- listbox -----------------------------*/
+.zmj-listbox-border
+{
+    border:solid 1px #9f9f9f;
+}
+.zmj-listbox-item-hover{
+	background:#CFCFCF;
+}
+.zmj-listbox-item-selected{
+	background:#a5a5a5;
+	color:White;
+}
+.zmj-listbox-header
+{    
+    background:#dcdcdc;
+    border-bottom:solid 1px #a0a0a0;
+}
+
+/*------------------- treegrid --------------------*/
+.zmj-treegrid-border
+{
+    border:1px solid #9f9f9f;
+}
+
+.zmj-treegrid-header
+{
+    border-bottom:solid 1px #a0a0a0;
+}
+.zmj-treegrid-headerInner
+{
+    background:#dcdcdc;
+}
+
+
+.zmj-treegrid-selectedNode
+{
+	background:#a5a5a5;
+}
+.zmj-treegrid-hoverNode
+{
+    background:#CFCFCF;
+}
+
+/*---------------------- calendar -----------------------------*/
+.zmj-calendar
+{    
+    border:1px solid #9f9f9f;       
+}
+.zmj-calendar-header
+{   
+    background:#dcdcdc;
+    border-bottom:solid 1px #c9c9c9;    
+}
+.zmj-calendar-footer
+{
+    background:#ededed;
+}
+.zmj-calendar-tadayButton, .zmj-calendar-clearButton,
+.zmj-calendar-okButton, .zmj-calendar-cancelButton
+{
+    border:1px solid #7F7F7F;
+    background:#E0DFDF url(images/calendar/button.gif) repeat-x 0 0;
+    color:#000000;
+}
+.zmj-calendar-menu-selected, a:hover.zmj-calendar-menu-selected
+{
+    color:White;
+    background:#8D8D8D;
+    border:solid 1px black;
+}
+.zmj-calendar .zmj-calendar-selected
+{
+    background:#8D8D8D;
+    color:White;
+    border:solid 1px #606060;
+}
+.zmj-calendar .zmj-calendar-today
+{
+    border:1px solid #C00000;
+}
+
+
+/*---------------------- tabs -----------------------------*/
+
+.zmj-tabs-leftButton, .zmj-tabs-rightButton
+{
+    border:solid 1px #7F7F7F;
+    background-color:#E0E0E0;
+}
+a:hover.zmj-tabs-leftButton,a:hover.zmj-tabs-rightButton
+{
+    background-color:#F2F2F2;
+}
+/* top */
+.zmj-tabs-bodys
+{
+    border:solid 1px #a8a8a8;
+    border-top:0;
+}
+.zmj-tabs-space
+{
+    border-bottom:solid 1px #a8a8a8;
+}
+.zmj-tabs-space2
+{
+    border-bottom:solid 1px #a8a8a8;
+}
+
+.zmj-tab
+{
+    background-color: #E0E0E0;
+    border: 1px solid #a8a8a8;
+    color:Black;
+}
+.zmj-tab-hover
+{        
+    background:#F2F2F2;    
+}
+.zmj-tab-active
+{
+    border-bottom:solid 1px white;
+    background:white;    
+}
+
+/* bottom */
+.zmj-tabs-position-bottom .zmj-tabs-space,
+.zmj-tabs-position-bottom .zmj-tabs-space2
+{
+    border:0;
+    border-top: 1px solid #a8a8a8;
+}
+.zmj-tabs-position-bottom .zmj-tabs-bodys
+{    
+    border:solid 1px #a8a8a8;
+    border-bottom:0;
+}
+.zmj-tabs-position-bottom .zmj-tab-active
+{
+    border-top:solid 1px white;
+    border-bottom:solid 1px #a8a8a8;
+}
+
+/* left */
+.zmj-tabs-position-left .zmj-tabs-space,
+.zmj-tabs-position-left .zmj-tabs-space2
+{
+    border:0;
+    border-right: 1px solid #a8a8a8;
+}
+.zmj-tabs-position-left .zmj-tabs-bodys
+{
+    border:solid 1px #a8a8a8;
+    border-left:0;
+}
+.zmj-tabs-position-left .zmj-tab-active
+{    
+    border:solid 1px #a8a8a8;
+    border-right:solid 1px white;
+}
+
+/* right */
+.zmj-tabs-position-right .zmj-tabs-space,
+.zmj-tabs-position-right .zmj-tabs-space2
+{
+    border:0;
+    border-left: 1px solid #a8a8a8;
+}
+.zmj-tabs-position-right .zmj-tabs-bodys
+{    
+    border:solid 1px #a8a8a8;
+    border-right:0;
+}
+.zmj-tabs-position-right .zmj-tab-active
+{    
+    border:solid 1px #a8a8a8;
+    border-left:solid 1px white;
+}
+
+
+/*---------------------- tree -----------------------------*/
+
+.zmj-tree-hottrack .zmj-tree-node-hover
+{
+    border:1px solid #888888;
+    background:#f2f2f2;
+}
+
+.zmj-tree-selectedNode .zmj-tree-nodeshow
+{
+    border:1px solid #888888;
+    background:#d8d8d8;
+}
+
+/*---------------------- grid -----------------------------*/
+.zmj-grid-headerCell
+{
+    background:#dcdcdc;
+    border-right:#9f9f9f 1px solid;
+    border-bottom:#9f9f9f 1px solid;
+}
+.zmj-grid-footer
+{
+    background:#f2f2f2;
+}
+.zmj-grid-detailRow
+{
+    background:#F0F0F0;
+}

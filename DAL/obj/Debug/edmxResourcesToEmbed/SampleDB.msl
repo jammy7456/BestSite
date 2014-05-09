@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SampleDBModelStoreContainer" CdmEntityContainer="SampleDBEntities">
+    <EntitySetMapping Name="plus_file">
+      <EntityTypeMapping TypeName="SampleDBModel.plus_file">
+        <MappingFragment StoreEntitySet="plus_file">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="size" ColumnName="size" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="createdate" ColumnName="createdate" />
+          <ScalarProperty Name="updatedate" ColumnName="updatedate" />
+          <ScalarProperty Name="folder" ColumnName="folder" />
+          <ScalarProperty Name="num" ColumnName="num" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_department">
+      <EntityTypeMapping TypeName="SampleDBModel.t_department">
+        <MappingFragment StoreEntitySet="t_department">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="manager" ColumnName="manager" />
+          <ScalarProperty Name="manager_name" ColumnName="manager_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_educational">
+      <EntityTypeMapping TypeName="SampleDBModel.t_educational">
+        <MappingFragment StoreEntitySet="t_educational">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_employee">
+      <EntityTypeMapping TypeName="SampleDBModel.t_employee">
+        <MappingFragment StoreEntitySet="t_employee">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="loginname" ColumnName="loginname" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="birthday" ColumnName="birthday" />
+          <ScalarProperty Name="dept_id" ColumnName="dept_id" />
+          <ScalarProperty Name="position" ColumnName="position" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="married" ColumnName="married" />
+          <ScalarProperty Name="salary" ColumnName="salary" />
+          <ScalarProperty Name="educational" ColumnName="educational" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="school" ColumnName="school" />
+          <ScalarProperty Name="createtime" ColumnName="createtime" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_position">
+      <EntityTypeMapping TypeName="SampleDBModel.t_position">
+        <MappingFragment StoreEntitySet="t_position">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="dept_id" ColumnName="dept_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

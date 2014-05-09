@@ -1,0 +1,669 @@
+﻿.zmj-button
+{
+    border-radius: 2px; 
+}
+.zmj-tab
+{
+    border-radius:3px;   
+}
+.zmj-tabs-position-right .zmj-tab
+{
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;     
+}
+
+.zmj-tabs-position-left .zmj-tab
+{
+    border-top-right-radius:0px;
+    border-bottom-right-radius:0px;     
+}
+.zmj-tabs-position-bottom .zmj-tab
+{
+    border-top-right-radius:0px;
+    border-top-left-radius:0px;     
+}
+.zmj-tabs-position-top .zmj-tab
+{
+    border-bottom-right-radius:0px;
+    border-bottom-left-radius:0px; 
+}
+
+
+/*----------------------------------- bgcss ----------------------------------*/
+.bg-toolbar
+{
+    background:#f0f0f0 url(images/toolbar/toolbar.gif) repeat-x 0 0;
+}
+
+
+/*----------------------------------- tools ----------------------------------*/
+
+.zmj-tools .zmj-tools-collapse
+{
+    background:url(images/tools/collapse.gif) no-repeat 50% 50%;
+    width:15px;	
+}
+.zmj-tools .zmj-tools-expand
+{
+    background:url(images/tools/expand.gif) no-repeat 50% 50%;
+    width:15px;	
+}
+.zmj-tools-close
+{
+    background:url(images/tools/close.gif) no-repeat 50% 0px;
+    width:15px;	
+}
+
+
+/*----------------------------------- toolbar ----------------------------------*/
+
+.zmj-toolbar
+{
+    border:solid 1px #99bce8;
+    background:#f0f0f0 url(images/toolbar/toolbar.gif) repeat-x 0 0;
+}
+.separator
+{
+    border-left:solid 1px #A8A8A8;    
+}
+
+/*----------------------------------- button ----------------------------------*/
+
+.zmj-button
+{
+	background:url(images/button/button.gif) repeat-x 0px 50%;
+	border:solid 1px #b5afaf;	
+    color:#222;
+}
+body a:hover.zmj-button
+{
+	background:#e2f2fe url(images/button/hover.gif) repeat-x 0px 50%;
+	border:solid 1px #80a4d0;	         
+}
+body .zmj-button-pressed, body a:hover.zmj-button-pressed,
+body .zmj-button-checked, body a:hover.zmj-button-checked,
+body a.zmj-button-popup, body a:hover.zmj-button-popup
+{
+	background:#bacee4 url(images/button/pressed.gif) repeat-x 0px 50%;	
+	border-color:#7a9ac4;
+}
+body .zmj-button-disabled, body a:hover.zmj-button-disabled
+{
+    border-color:#E1E2E5;
+    color:#BABAC1;
+    background:#F8F9FA url(images/button/disabled.png) repeat-x 0 0px;       
+}
+
+
+/*----------------------------------- textbox ----------------------------------*/
+.zmj-textbox-input
+{
+    background:white url(images/buttonedit/text-bg.gif) repeat-x 0px top;
+	border:solid 1px #b5b8c8;        
+}
+body .zmj-textbox-focus .zmj-textbox-input
+{
+    border-color: #7eadd9;
+}
+
+
+/*----------------------------------- buttonedit ----------------------------------*/
+
+.zmj-buttonedit-border
+{
+	background:white url(images/buttonedit/text-bg.gif) repeat-x 0px top;
+	border-color:#b5b8c8;    
+}
+body .zmj-buttonedit-focus .zmj-buttonedit-border
+{
+    border-color: #7eadd9;
+}
+.zmj-buttonedit-button
+{
+	background:url(images/buttonedit/btn.gif) repeat-x 0px 50%;		
+	border:#b5b8c8 1px solid;   
+	padding:0;
+}
+.zmj-buttonedit-button-hover,
+.zmj-buttonedit-hover .zmj-buttonedit-button
+{
+    background:url(images/buttonedit/btn-hover.gif) repeat-x 0 50%;	
+	border-color:#80a4d0;
+}
+.zmj-buttonedit-button-pressed,
+.zmj-buttonedit-popup .zmj-buttonedit-button
+{
+    background:url(images/buttonedit/btn-pressed.gif) repeat-x 0 50%;	
+	border-color:#80a4d0;
+}
+.zmj-popupedit .zmj-buttonedit-icon
+{
+    background:url(images/buttonedit/arrow.gif) no-repeat  1px 2px;
+}
+.zmj-datepicker .zmj-buttonedit-icon
+{
+    background:url(images/buttonedit/date.gif) no-repeat  1px 2px;
+}
+
+
+/*------------------------- panel -----------------------*/
+
+.zmj-panel-border
+{    
+    border:1px solid #99bce8;     
+}
+.zmj-panel-header
+{
+    height:25px;
+    background:#E3E6E8 url(images/panel/header.gif) repeat-x 0 0px;
+    color:#04408c;
+    font-weight:bold;
+    border-bottom:solid 1px #99bce8;
+}
+.zmj-panel-header-inner
+{
+   padding-top:4px;
+}
+.zmj-panel-toolbar
+{
+    border-bottom:solid 1px #99bce8;
+    background:#D3E1F1;
+}
+
+.zmj-panel-footer
+{
+    border-top:solid 1px #99bce8;
+    background:#D3E1F1;
+}
+
+.zmj-panel-collapse .zmj-tools-collapse
+{
+    background:url(images/tools/expand.gif) no-repeat 50% 50%;
+}
+
+/*----------------------------- window -------------------------*/
+.zmj-window .zmj-panel-header
+{
+    background:#E3E6E8 url(images/window/header.gif) repeat-x 0 0px;
+}
+.zmj-window .zmj-panel-footer
+{
+    background:#D3E1F1;
+}
+
+/*------------------- navbar ------------------*/
+.zmj-outlookbar-border
+{
+    border:1px solid #99bce8;         
+}
+.zmj-outlookbar .zmj-outlookbar-groupHeader
+{
+    background:#d9e8fb url(images/navbar/header.gif) repeat-x 0 0;    
+    border-color:#99bce8;
+}
+.zmj-outlookbar .zmj-outlookbar-groupTitle
+{
+    color:Black;
+    font-weight:normal;
+}
+.zmj-outlookbar .zmj-outlookbar-group 
+{
+    border-color:#99bce8;
+}
+.zmj-outlookbar .zmj-outlookbar-groupBody
+{    
+    border-color:#99bce8;
+}
+/* view2 */
+.zmj-outlookbar-view2 .zmj-outlookbar-groupHeader
+{
+    border:solid 1px #99bce8; 
+}
+.zmj-outlookbar-view2 .zmj-outlookbar-groupBody
+{    
+    background:#fff;
+}
+/* view3 */
+.zmj-outlookbar-view3 .zmj-outlookbar-group
+{
+    border:solid 1px #99bce8; 
+}
+
+.zmj-outlookbar .zmj-tools-collapse
+{
+    width:15px;	
+}
+.zmj-outlookbar .zmj-outlookbar-expand .zmj-tools-collapse
+{
+    background:url(images/navbar/expand.gif) no-repeat 50% 50%;   
+}
+.zmj-outlookbar .zmj-outlookbar-collapse .zmj-tools-collapse
+{
+    background:url(images/navbar/collapse.gif) no-repeat 50% 50%;   
+}
+
+
+/*----------------------- splitter -----------------------*/
+.zmj-splitter-border
+{
+    border:solid 1px #99bce8;     
+}
+.zmj-splitter .zmj-splitter-pane1{
+    border-color:#99bce8;
+}
+.zmj-splitter .zmj-splitter-pane2{
+    border-color:#99bce8;
+}
+
+/*----------------------- layout -----------------------*/
+.zmj-layout-border
+{
+    
+}
+.zmj-layout-region
+{
+    border-color:#90b5e3;    
+}
+.zmj-layout-region-header
+{
+    background:url(images/layout/header.gif) repeat-x 0 0;
+    border-bottom:solid 1px #99bce8;
+}
+.zmj-layout-proxy
+{
+    border-color:#90b5e3;
+    background:#D2E0F2;
+}
+.zmj-layout-proxy-hover
+{
+    background:#e1f0f2;    
+}
+
+.zmj-layout-region-west .zmj-tools-collapse
+{
+    background:url(images/layout/west.gif) no-repeat 50% 50%;
+}
+.zmj-layout-region-east .zmj-tools-collapse
+{
+    background:url(images/layout/east.gif) no-repeat 50% 50%;
+}
+.zmj-layout-region-north .zmj-tools-collapse
+{
+    background:url(images/layout/north.gif) no-repeat 50% 50%;
+}
+.zmj-layout-region-south .zmj-tools-collapse
+{
+    background:url(images/layout/south.gif) no-repeat 50% 50%;
+}
+
+.zmj-layout-proxy-west .zmj-tools-collapse
+{
+    background:url(images/layout/east.gif) no-repeat 50% 50%;
+}
+.zmj-layout-proxy-east .zmj-tools-collapse
+{
+    background:url(images/layout/west.gif) no-repeat 50% 50%;
+}
+.zmj-layout-proxy-north .zmj-tools-collapse
+{
+    background:url(images/layout/south.gif) no-repeat 50% 50%;
+}
+.zmj-layout-proxy-south .zmj-tools-collapse
+{
+    background:url(images/layout/north.gif) no-repeat 50% 50%;
+}
+
+/*------------------------- menu --------------------------------*/
+
+.zmj-menu
+{
+	background:#f0f0f0 url(images/menu/menu.gif) repeat-y -5px 0;		
+	border-color:#89b1e4;
+    color:black;
+}
+.zmj-menuitem
+{
+    line-height:20px;    
+}
+.zmj-menuitem-hover
+{
+    border-color:#80a4d0;
+	background:#d6e6fa url(images/menu/hover.gif) repeat-x;	
+}
+.zmj-menu-popup
+{
+    border-color:#80a4d0;
+	background:#d6e6fa url(images/menu/hover.gif) repeat-x;	
+}
+.zmj-menuitem-selected
+{
+    border-color:#80a4d0;
+    background:#DBDDE2 url(images/menu/pressed.png) repeat-x 0 0;
+}
+.zmj-menuitem-text, .zmj-menuitem-text a
+{
+    color:black;
+}
+.zmj-separator
+{
+    border-top:solid 1px #8EAADE;
+}
+
+/* menu horizontal */
+.zmj-menu-horizontal .zmj-menu-inner
+{
+    background:#d3e1f1 url(images/menu/hmenu.gif) repeat-x 0 0;
+}
+.zmj-menu-horizontal .zmj-menuitem-hover
+{
+    border:solid 1px #80a4d0;
+    background:#d6e6fa url(images/menu/hover.gif) repeat-x;	
+}
+.zmj-menu-horizontal  .zmj-menu-popup
+{
+    border:solid 1px #80a4d0;
+    background:#d6e6fa url(images/menu/hover.gif) repeat-x;	
+    border-bottom:0px;
+}
+
+/*---------------------- listbox -----------------------------*/
+.zmj-listbox-border
+{    
+    border:#98c0f4 1px solid;
+}
+.zmj-listbox-border td
+{
+    line-height:20px;       
+}
+.zmj-listbox-item td{
+	border-top:white 1px dotted;
+	border-bottom:white 1px dotted;	
+}
+.zmj-listbox-item-hover td{
+    background:#dfe8f6;
+	border-top:#8eabe4 1px dotted;
+	border-bottom:#8eabe4 1px dotted;
+}
+.zmj-listbox-item-selected td{
+	background:#cbdaf0;
+	border-top:#8eabe4 1px dotted;
+	border-bottom:#8eabe4 1px dotted;
+}
+.zmj-listbox-header
+{
+    background:#E7EBEF url(images/listbox/header.png) repeat-x 0 0;    
+    border-bottom:solid 1px #a5acb5;
+}
+
+/*------------------- treegrid --------------------*/
+.zmj-treegrid-border
+{
+    border:1px solid #98c0f4;
+}
+
+.zmj-treegrid-header
+{
+    border-bottom:none;
+}
+.zmj-treegrid-headerInner
+{
+    background:#E7EBEF url(images/treegrid/header.png) repeat-x 0 0;
+}
+.zmj-treegrid td
+{
+    border-right:solid 1px #d0d0d0;
+    border-bottom:solid 1px #d0d0d0;        
+}
+.zmj-treegrid-header td
+{
+    border-right:solid 1px #d0d0d0;
+}
+
+.zmj-treegrid-selectedNode
+{
+	background:#cbdaf0;
+}
+.zmj-treegrid-hoverNode
+{
+    background:#dfe8f6;
+}
+/*
+.zmj-treegrid-expand .zmj-treegrid-ec-icon
+{
+	background-image:url(images/treegrid/expand.gif);
+	background-position:50% 50%;
+}
+.zmj-treegrid-collapse .zmj-treegrid-ec-icon
+{
+	background-image:url(images/treegrid/collapse.gif);
+	background-position:50% 50%;
+}*/
+.zmj-treegrid-leaf
+{
+    background-image:url(images/treegrid/file.png);
+}
+.zmj-treegrid-folder
+{
+    background-image:url(images/treegrid/folder.gif);
+}
+
+/*---------------------- calendar -----------------------------*/
+.zmj-calendar
+{    
+    border:1px solid #98c0f4;       
+}
+.zmj-calendar-header
+{   
+    background:#cad8ec url(images/calendar/footer.gif) repeat-x 0 0;    
+    border-bottom:solid 1px #9bb5d3;    
+}
+.zmj-calendar-footer
+{
+    border-top:solid 1px #b2d1f5;
+    background:#cad8ec url(images/calendar/footer.gif) repeat-x 0 0;    
+}
+.zmj-calendar-tadayButton, .zmj-calendar-clearButton,
+.zmj-calendar-okButton, .zmj-calendar-cancelButton
+{
+	background:url(images/button/button.gif) repeat-x 0px 50%;
+	border:solid 1px #b5afaf;	
+    color:#222;
+}
+.zmj-calendar-menu-selected, a:hover.zmj-calendar-menu-selected
+{
+    color:#333;
+    background:#dae5f3;
+    border:solid 1px #8db2e3;
+}
+
+.zmj-calendar .zmj-calendar-selected
+{
+    color:#333;
+    background:#dae5f3;
+    border:solid 1px #8db2e3;
+}
+.zmj-calendar .zmj-calendar-today
+{
+    border:1px solid #C00000;
+}
+.zmj-calendar-daysheader td
+{border-bottom:solid 1px #b2d1f5;    
+}
+    
+/*---------------------- tabs -----------------------------*/
+
+.zmj-tabs-leftButton, .zmj-tabs-rightButton
+{
+    border:solid 1px #b5afaf;
+    background-color:#EBEBEE;
+}
+a:hover.zmj-tabs-leftButton,a:hover.zmj-tabs-rightButton
+{
+    border:solid 1px #80a4d0;
+    background-color:#E1E8FD;
+}
+/* top */
+.zmj-tabs-bodys
+{
+    border-color:#8CB2E2;
+}
+.zmj-tabs-space
+{
+    border-color:#8CB2E2;
+}
+.zmj-tabs-space2
+{
+    border-color:#8CB2E2;
+}
+
+.zmj-tab
+{
+    background: #EBEBEE url(images/tabs/tab.gif) repeat-x 0 0;  
+    border: 1px solid #8CB2E2;
+    color: #333;    
+    
+}
+.zmj-tab-hover
+{    
+    background:#E1E8FD url(images/tabs/hover.gif) repeat-x 0 0; 
+}
+.zmj-tab-active
+{
+    border-bottom:solid 1px #deecfd;
+    background:#E1E8FD url(images/tabs/pressed.gif) repeat-x 0 0;  
+}
+
+/* bottom */
+.zmj-tabs-position-bottom .zmj-tabs-space,
+.zmj-tabs-position-bottom .zmj-tabs-space2
+{
+    border:0;
+    border-top: 1px solid #8CB2E2;
+}
+.zmj-tabs-position-bottom .zmj-tabs-bodys
+{    
+    border:solid 1px #99bce8;
+    border-bottom:0;
+}
+.zmj-tabs-position-bottom .zmj-tab-active
+{
+    border-top:solid 1px white;
+    border-bottom:solid 1px #99bce8;
+}
+
+/* left */
+.zmj-tabs-position-left .zmj-tabs-space,
+.zmj-tabs-position-left .zmj-tabs-space2
+{
+    border:0;
+    border-right: 1px solid #99bce8;
+}
+.zmj-tabs-position-left .zmj-tabs-bodys
+{
+    border:solid 1px #99bce8;
+    border-left:0;
+}
+.zmj-tabs-position-left .zmj-tab-active
+{    
+    border:solid 1px #99bce8;
+    border-right:solid 1px white;
+}
+
+/* right */
+.zmj-tabs-position-right .zmj-tabs-space,
+.zmj-tabs-position-right .zmj-tabs-space2
+{
+    border:0;
+    border-left: 1px solid #99bce8;
+}
+.zmj-tabs-position-right .zmj-tabs-bodys
+{    
+    border:solid 1px #99bce8;
+    border-right:0;
+}
+.zmj-tabs-position-right .zmj-tab-active
+{    
+    border:solid 1px #99bce8;
+    border-left:solid 1px white;
+}
+
+/*---------------------- tree -----------------------------*/
+
+
+.zmj-tree-hottrack .zmj-tree-node-hover
+{
+    background:url(images/tree/button.gif) repeat-x 0px 50%;
+	border:solid 1px #b5afaf;		  
+}
+.zmj-tree-selectedNode .zmj-tree-nodeshow
+{
+    background:#e2f2fe url(images/tree/hover.gif) repeat-x 0px 50%;
+	border:solid 1px #80a4d0;	
+}
+
+.zmj-tree-leaf
+{
+    background-image:url(images/tree/leaf.gif);
+}
+.zmj-tree-folder
+{
+    background-image:url(images/tree/folder.gif);
+}
+.zmj-tree-expand .zmj-tree-folder
+{
+    background-image:url(images/tree/folder-open.gif);
+}
+
+/*------------------- grid --------------------*/
+.zmj-grid-border
+{
+    border-color:#99bce8;
+}
+.zmj-grid-header
+{
+    background:url(images/grid/header.gif) repeat-x scroll left top #e2e4e6;
+}
+.zmj-grid-headerCell
+{
+    background:url(images/grid/header.gif) repeat-x scroll left top #e2e4e6;
+    border-right:#c5c5c5 1px solid;
+    border-bottom:#c5c5c5 1px solid;
+}
+.zmj-grid-cell
+{
+    border-color:#d0d0d0;
+    border-bottom-color:#d0d0d0;
+}
+.zmj-grid-footer
+{
+    border-top:solid 1px #99bce8;    
+    background:url(images/grid/footer.gif) repeat-x scroll left top #d4e2f1;
+}
+
+
+body .zmj-grid-row-hover, body .zmj-grid-row-hover .zmj-grid-frozenCell
+{
+    background:#ecedef;    
+}
+body .zmj-grid-row-selected, body .zmj-grid-row-selected .zmj-grid-frozenCell
+{
+    background:#dfe8f6;		
+}
+
+/*------------------- pager --------------------*/
+.zmj-pager-first
+{    
+    background:url(images/pager/first.gif) no-repeat;
+}
+.zmj-pager-prev
+{
+    background-image:url(images/pager/prev.gif);
+}
+.zmj-pager-next
+{
+    background-image:url(images/pager/next.gif);
+}
+.zmj-pager-last
+{
+    background-image:url(images/pager/last.gif);
+}

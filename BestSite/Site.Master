@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="BestSite.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+    <script src="/Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery-ui-1.9.2.custom.min.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery-cust-init.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery.validate.min.js" type="text/javascript"></script>
+
+    <script src="/Scripts/jquery.jqGrid.min.js" type="text/javascript"></script>
+    <script src="/Scripts/grid.locale-en.js" type="text/javascript"></script>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="frmMain" runat="server">
+        <div class="page">
+            <div class="header ui-widget-header ui-helper-clearfix">
+                <div class="title">
+                    <h1>
+                        <asp:Literal ID="Literal2" runat="server" Text="<%$ AppSettings: systemname%>" /><span
+                            class="title-ver"><asp:Literal ID="Literal1" runat="server" Text="<%$ AppSettings: systemversion%>"></asp:Literal></span>
+                    </h1>
+                </div>
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        <div class="loginDisplay">
+                            [ <a href="Login.aspx" id="HeadLoginStatus" runat="server">登陆</a> ]
+                        </div>
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        <div class="loginDisplay">
+                            Welcome: <span class="bold">
+                                <asp:LoginName ID="HeadLoginName" runat="server" />
+                            </span>&nbsp;[
+                        <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText='注销'
+                            LogoutPageUrl="Login.aspx" />
+                            ]
+                        </div>
+                        <div class="hideSkiplink ui-state-default ui-helper-clearfix">
+                            <asp:Menu ID="menuNav" runat="server" DataSourceID="dsSiteMap" Orientation="Horizontal"
+                                CssClass="menu" SkipLinkText="" EnableViewState="false" IncludeStyleBlock="false">
+                            </asp:Menu>
+                        </div>
+                        <asp:SiteMapDataSource ID="dsSiteMap" runat="server" ShowStartingNode="false" />
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="main">
+                <div id="content" class="content ui-widget">
+                    <div class="content-main-container ui-widget-content">
+                        <div class="content-head ui-widget-header ui-helper-clearfix">
+                            <div class="content-head-title">
+                                <h2>
+                                    <asp:ContentPlaceHolder ID="ContentHeadTitle" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </h2>
+                            </div>
+                            <a href="#" id="accordion-btn"></a>
+                        </div>
+                        <div>
+                            <div class="content-main-detail">
+                                <asp:ContentPlaceHolder ID="ContentMainDetail" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <asp:Literal ID="ltlCopyright" runat="server" Text="<%$ AppSettings: copyright %>"></asp:Literal>
+        </div>
+    </form>
+</body>
+</html>

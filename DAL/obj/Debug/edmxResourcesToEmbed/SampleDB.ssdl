@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SampleDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="SampleDBModelStoreContainer">
+    <EntitySet Name="plus_file" EntityType="SampleDBModel.Store.plus_file" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="t_department" EntityType="SampleDBModel.Store.t_department" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="t_educational" EntityType="SampleDBModel.Store.t_educational" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="t_employee" EntityType="SampleDBModel.Store.t_employee" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="t_position" EntityType="SampleDBModel.Store.t_position" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="plus_file">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="500" />
+    <Property Name="type" Type="varchar" MaxLength="50" />
+    <Property Name="size" Type="varchar" MaxLength="50" />
+    <Property Name="url" Type="varchar" MaxLength="500" />
+    <Property Name="pid" Type="varchar" MaxLength="50" />
+    <Property Name="createdate" Type="datetime" />
+    <Property Name="updatedate" Type="datetime" />
+    <Property Name="folder" Type="int" />
+    <Property Name="num" Type="int" />
+  </EntityType>
+  <EntityType Name="t_department">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="manager" Type="nvarchar" MaxLength="500" />
+    <Property Name="manager_name" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="t_educational">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="t_employee">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="loginname" Type="nvarchar" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="age" Type="int" />
+    <Property Name="birthday" Type="datetime" />
+    <Property Name="dept_id" Type="nvarchar" MaxLength="50" />
+    <Property Name="position" Type="nvarchar" MaxLength="50" />
+    <Property Name="gender" Type="int" />
+    <Property Name="married" Type="int" />
+    <Property Name="salary" Type="nvarchar" MaxLength="50" />
+    <Property Name="educational" Type="nvarchar" MaxLength="50" />
+    <Property Name="country" Type="nvarchar" MaxLength="50" />
+    <Property Name="city" Type="nvarchar" MaxLength="50" />
+    <Property Name="remarks" Type="nvarchar" MaxLength="1000" />
+    <Property Name="school" Type="nvarchar" MaxLength="50" />
+    <Property Name="createtime" Type="datetime" />
+    <Property Name="email" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="t_position">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="dept_id" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+</Schema>

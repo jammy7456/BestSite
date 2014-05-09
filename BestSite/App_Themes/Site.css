@@ -1,0 +1,803 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+html
+{
+    overflow: scroll;
+}
+
+body
+{
+    /* font-size: 0.85em;     font-family: "Helvetica Neue" , "Lucida Grande" , "Segoe UI" , Arial, Helvetica, Verdana, sans-serif;     color: #696969;*/
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 75%;
+    color: #666666;
+    margin: 0px;
+    padding: 0px;
+    overflow: visible;
+    line-height:normal !important;
+}
+
+.box-shadow, .ui-dialog, .ui-jqgrid
+{
+    box-shadow: 1px 1px 5px #333;
+    -webkit-box-show: 1px 1px 5px #333;
+    -moz-box-shadow: 1px 1px 5px #333;
+}
+
+.box-shadow-lite
+{
+    box-shadow: 1px 1px 2px #555;
+    -webkit-box-show: 1px 1px 2px #555;
+    -moz-box-shadow: 1px 1px 2px #555;
+}
+
+a:link, a:visited
+{
+    /* color: #034af3;*/
+    color: #336699;
+}
+
+a:hover
+{
+    /* color: #1d60ff;*/
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #336699;
+}
+
+p
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 600;
+}
+
+h1
+{
+    font-size: 1.6em;
+}
+
+h2
+{
+    font-size: 1.5em;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    background-color: #fff;
+    min-width: 820px;
+}
+
+.header
+{
+    margin: 2px;
+    padding: 0px; /*background: #4b6c9e;*/
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #444;
+    border: none;
+    font-size: 2em;
+}
+
+.main
+{
+    margin: 2px;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer
+{
+    color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+}
+
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.title-ver
+{
+    margin-left: 10px;
+    font-size: 0.5em !important;
+    color: #369;
+}
+
+.inline
+{
+    display: inline;
+}
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: #666;
+}
+
+.loginDisplay a:link
+{
+    color: #666;
+}
+
+.loginDisplay a:visited
+{
+    color: #666;
+}
+
+.loginDisplay a:hover
+{
+    color: #3399FF;
+}
+
+.failureNotification
+{
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+
+.errormsg
+{
+    color: #FF3300;
+    font-size: 1.2em;
+    font-family: 'Courier New' , Courier, monospace;
+}
+
+.ui-menu
+{
+   z-index:9999 !important; 
+}
+
+ul.ui-menu li p
+{
+    margin: 2px 0 2px 0;
+    padding: 0 0 0 4px;
+}
+
+span.msg-tip
+{
+    color: #FF9900;
+}
+
+.tree-view
+{
+    width: 100%;
+    overflow: auto;
+    border: 1px solid #ccc;
+}
+.ui-autocomplete
+{
+    max-height: 220px;
+    overflow: auto;
+}
+
+.ui-menu .ui-menu-item a {
+	padding:0 .4em;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+    /*background-color: #3a4f63;     width: 100%;*/
+    border-width: 0 !important;
+    font-family: 'Lucida Console';
+    padding: 1px;
+    font-size: 1em;
+    box-shadow: 0px -1px 5px #333;
+    -webkit-box-show: 0px -1px 5px #333;
+    -moz-box-shadow: 0px -1px 5px #333;
+}
+
+
+
+div.menu
+{
+    padding: 0;
+}
+
+div.menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    z-index: 9;
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+    display: block !important;
+    padding: 6px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-right: 1px;
+    font-weight: 600 !important;
+    color: #003366 !important;
+}
+
+div.menu ul li a:hover
+{
+    /*background-color: #bfcbd6;*/
+    color: #3399FF !important;
+    text-decoration: none;
+}
+
+div.menu ul li a:active
+{
+    /*background-color: #465c71;*/
+    color: #336699;
+    text-decoration: none;
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+fieldset p
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset.login
+{
+    display: inline;
+}
+
+fieldset label.inline
+{
+    display: inline;
+}
+
+legend
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input.textEntry
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+}
+
+.left
+{
+    float: left;
+}
+
+.right
+{
+    float: right;
+}
+
+.tabs
+{
+    height: 350px;
+    overflow: auto;
+}
+
+
+
+/* Sitemap Tree Style  
+----------------------------------------------------------*/
+.sitemap-container
+{
+    font-family: 'Courier New' , Courier, monospace;
+    font-size: 1.2em;
+}
+.sitemap
+{
+    margin-left: 90px;
+    padding: 10px;
+}
+
+/* Validation Style  
+----------------------------------------------------------*/
+select.error, input.error
+{
+    border: 1px solid #FF0066;
+    background-color: #FFEEFF;
+}
+
+label.error
+{
+    display:block;
+    color: #FF0066;
+    vertical-align: top;
+    font-size: 0.9em;
+    font-family: 'Arial Narrow';
+    position: absolute;
+}
+
+tr.error
+{
+    background: #FFCCCC !important;
+}
+
+/* Dialog Style  
+----------------------------------------------------------*/
+.ifm-container
+{
+}
+
+.ifm
+{
+    margin-left: 12px;
+}
+
+.dlg-content
+{
+    display: inline-block;
+    zoom: 1; 
+    *display: inline;
+}
+
+.dlg-content .tree-field
+{
+    width: 318px;   
+}
+
+.dlg-content .tree-field .tree-view
+{
+    height: 350px !important;
+}
+
+.dlg-content-item .input-field
+{
+    float:left;
+}
+
+.dlg-content-item .tree-field
+{
+    margin-left: 350px;
+    width: 250px;
+}
+
+.dlg-content-item .grid-field
+{
+    width:300px;
+    height: 400px;
+    overflow: auto;
+}
+
+.tree-field .ui-tabs .ui-tabs-nav li a
+{
+    padding-top: 0.2em !important;
+    padding-bottom: 0.2em !important;
+}
+
+/* Table Style  
+----------------------------------------------------------*/
+table.display
+{
+    font-size: 82% !important;
+}
+
+table.display tbody td
+{
+    min-height:1em;
+}
+
+table.onepage-datatable tbody td
+{
+    border-collapse: collapse;
+    border: 1px solid #C0C0C0 !important;
+    white-space: nowrap !important;
+}
+
+span.caption
+{
+    color: #FFFF00;
+}
+
+
+table.display tbody td
+{
+    min-height:1em;
+}
+
+td.readonly
+{
+    font-style: italic !important;
+}
+
+
+tr.level0 td
+{
+    font-weight: 600 !important;
+}    
+
+tr.level1 td
+{
+    font-weight: 400 !important;
+}
+
+.editable-form
+{
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+.jqg-toolbar
+{
+    height: 4em !important;
+    white-space:nowrap;
+}
+
+.jqg-toolbar label.error
+{
+    display:none !important;
+}
+
+.jqg-toolbar p
+{
+    margin: 0.5em 0 0.5em 1em;
+    display:inline-block;
+}
+
+.jqg-toolbar p
+{
+    *display: inline;
+}
+
+/*.jqg-toolbar p label
+{
+    font-size: small;
+}
+*/
+
+.jqg-toolbar .lbl-field
+{
+    color: #222;
+    width: 200px;
+}
+
+.jqg-toolbar .txt-field
+{
+    width: 200px;
+}
+
+.duplex-head .ui-jqgrid .ui-jqgrid-htable th div
+{
+    height: 28px !important;
+}
+
+.ui-jqgrid-htable th div .desc
+{
+    border-top-style: solid;
+    border-width: 1px;
+}
+
+.ui-jqgrid tr.jqgrow td
+{
+    height: 20px !important;
+}
+
+#pager_left
+{
+    width: auto !important;
+}
+
+#d_clip_button { font-size:xx-small !important; width:60px; height:18px; }
+
+/* Field Style  
+----------------------------------------------------------*/
+.span-field
+{
+    display: block;
+    width: 316px;
+    max-height: 5em;
+    min-height: 1em;
+    border: 1px solid #ccc;
+    padding: 2px 0 2px 0;
+    overflow: auto;
+}
+
+.lbl-field
+{
+    display: block;
+    width: 316px;
+    max-height: 5em;
+    min-height: 1em;
+    border: 1px solid #ccc;
+    padding: 3px 1px 3px 1px;
+    background-color: #EEE;
+    overflow: auto;
+}
+
+.txt-field
+{
+    width: 318px;
+    border: 1px solid #ccc;
+    display: block;
+    padding: 2px 0 2px 0;
+}
+
+.ddl-field
+{
+    width: 320px;
+    border: 1px solid #ccc;
+    display: block;
+    padding: 1px;
+}
+
+.fu-field
+{
+    width: 320px;
+    display: block;
+}
+
+div.one-row
+{
+    position:relative;
+}
+
+div.one-row p
+{
+}
+
+.one-row .row-head
+{
+    position:absolute;
+    bottom:0.3em;
+    width: 130px;
+    text-align:right;
+}
+
+.one-row .ddl-field
+{
+    width: 212px;
+}
+
+.one-row .txt-field
+{
+    width: 212px;
+}
+
+.one-row p
+{
+    margin-left: 140px;
+}
+
+.one-row .msg-tip
+{
+    position:absolute;
+}
+
+.inline-field-cell
+{
+    display: block;
+    float: left;
+    margin-right: 2px;
+}
+
+.inline-field
+{
+    width: 105px !important;
+}
+
+.ui-datepicker-append
+{
+    color: #C0C0C0;
+}
+
+/* Status Bar  
+----------------------------------------------------------*/
+#statusBar
+{
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    display: none;
+}
+
+#statusContent
+{
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 4px;
+}
+
+/* Content  
+----------------------------------------------------------*/
+.content-main-container, .content-msg, .content-action, .content-related
+{
+    clear: both;
+    margin-bottom: 2px;
+}
+
+.content-main, .content-msg, .content-action, .content-related
+{
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    position:relative;
+}
+
+.content
+{
+}
+
+.content .action
+{
+    display: inline-block;
+    font-size: 0.8em !important;
+    min-width: 100px;
+    margin-right: 1em;
+}
+
+.content-head
+{
+    padding-left: 0.5em;
+    border-width: 0 !important;
+    -webkit-box-show: 0px 1px 5px #333;
+    -moz-box-shadow: 0px 1px 5px #333;
+    position: relative;
+}
+
+.content-head #accordion-btn
+{
+    width: 28px;
+    height: 12px;
+    position: absolute;
+    padding: 0;
+    top: 9px;
+    left: 50%;
+    margin-left: -14px;
+}
+
+.content-head-title
+{
+    float: left;
+}
+
+.content-head-title h2
+{
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+}
+
+.content-head-action
+{
+    float: right;
+}
+
+.content-main
+{
+    z-index:1;
+}
+
+.content-main-detail
+{
+    margin: 5px;
+}
+
+.main-detail
+{
+    float:left;
+}
+
+.info-detail
+{
+    position:absolute;
+    left: 400px;
+}
+
+.info-detail .tree-view
+{
+    width: 350px;
+}
+
+.info-detail .ui-jqgrid
+{
+    margin-top:1em;
+    font-size: 0.87em !important;
+}
+
+
